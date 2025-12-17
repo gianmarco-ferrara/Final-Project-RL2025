@@ -23,6 +23,12 @@ ros2 launch ros2_fra2mo cooperative_task.launch.py
 ```
 This command allows you to visualize the execution of the task in Gazebo and to monitor fra2mo in RViz.
 
+If you want to record fra2mo's trajectory during task execution, open a second terminal and run (before fra2mo starts moving):
+```shell
+ros2 run ros2_fra2mo plot_trajectory.py
+```
+at the end of the task execution, press `ctrl+C` to get the image in .png format.
+
 ## Other available functionalities
 ### Visualization of the environment and spawning of the robots
 In order to spawn the robots in Gazebo (and start nodes related to vision and navigation) without starting the execution of the task, open a terminal and use the command:
