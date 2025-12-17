@@ -31,7 +31,7 @@ ros2 run ros2_fra2mo plot_trajectory.py
 at the end of the task execution, press `ctrl+C` to get the image in .png format.
 ### Demo
 A video-demo is available here:
-[![Watch the video](https://img.youtube.com/vi/wgDxlO-bMEQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=6dcHrBN-tpY)
+[![Watch the video]](https://www.youtube.com/watch?v=6dcHrBN-tpY)
 
 ## Other available functionalities
 ### Visualization of the environment and spawning of the robots
