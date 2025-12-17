@@ -1,7 +1,7 @@
 # Simulation of a Multi-Robot Pick & Place Pipeline for Warehouse Automation
 Final Project - Robotics Lab 2025/26
 
-The actors of the scene are fra2mo (differential drive robot home-made by Prisma Lab @ UNINA) and two Iiwa robots (by Kuka) in a custom warehouse setting. Each manipulator manages a workstation, while the mobile robot is required to transfer an object from the loading workstation to the unloading one. The NAV 2 stack is exploited to plan long-range autonomous navigation missions within the warehouse. Then, a visual servoing logic (using ArUco tags) is used for final precise docking. Coordination with manipulators is guaranteed by means of an handshaking logic (implemented with some custom coordination topics).
+The actors of the scene are fra2mo (differential drive robot home-made by Prisma Lab @ UNINA) and two Iiwa robots (by Kuka) in a custom warehouse setting. Each manipulator manages a workstation, while the mobile robot is required to transfer an object from the loading workstation to the unloading one. The NAV 2 stack is exploited to plan long-range autonomous navigation missions within the warehouse. Then, a visual servoing logic (using ArUco tags) is used for final precise docking. Coordination with manipulators is guaranteed by means of an handshaking logic (implemented with some custom coordination topics). Vacuum grippers are simulated via DetachableJoint plugin.
 ## Available Packages in this Repository ##
 - `ros2_iiwa` - ROS2 stack for KUKA iiwa 14 collaborative robots
 - `ros2_fra2mo` - containing files to simulate fra2mo (differential drive robot) and the cooperative task
