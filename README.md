@@ -1,6 +1,5 @@
-# Final Project - Robotics Lab 2025/26
-Simulation of a Multi-Robot Pick & Place Pipeline for Warehouse Automation
-
+# Simulation of a Multi-Robot Pick & Place Pipeline for Warehouse Automation
+Final Project - Robotics Lab 2025/26
 ## Getting Started
 
 ```shell
