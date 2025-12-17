@@ -42,3 +42,28 @@ At the end of the exploration procedure, open the `ros2_fra2mo/maps` folder in a
 ```shell
 ros2 run nav2_map_server map_saver_cli -f map
 ```
+### Autonomous Navigation (AMCL)
+Open a terminal and spawn fra2mo in Gazebo using the command:
+```shell
+ros2 launch ros2_fra2mo gazebo_fra2mo.launch.py
+```
+then in another terminal start navigation by using:
+```shell
+ros2 launch ros2_fra2mo fra2mo_navigation.launch.py
+```
+Now you can assign Nav2 goal poses directly in RViz and see fra2mo autonomously navigating the environment. 
+### RViz GUI to plan manipulators' trajectory
+Make sure `joint_state_publisher_gui` is available within your workspace. If not, supposing you are using ROS 2 Humble, you can install it directly from the terminal:
+```shell
+sudo apt update
+sudo apt install ros-humble-joint-state-publisher-gui
+```
+Then you can visualize iiwa1 in RViz by launching:
+```shell
+ros2 launch ros2_fra2mo teaching_iiwa.launch.py
+```
+or iiwa2 by:
+```shell
+ros2 launch ros2_fra2mo teaching_sec_iiwa.launch.py
+```
+It is suggested to activate the TF Display in order to visualize also the target frames used for planning.
