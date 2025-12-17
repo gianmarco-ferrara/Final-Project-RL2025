@@ -29,6 +29,9 @@ If you want to record fra2mo's trajectory during task execution, open a second t
 ros2 run ros2_fra2mo plot_trajectory.py
 ```
 at the end of the task execution, press `ctrl+C` to get the image in .png format.
+### Demo
+A video-demo is available here:
+[![Watch the video](https://img.youtube.com/vi/wgDxlO-bMEQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=6dcHrBN-tpY)
 
 ## Other available functionalities
 ### Visualization of the environment and spawning of the robots
