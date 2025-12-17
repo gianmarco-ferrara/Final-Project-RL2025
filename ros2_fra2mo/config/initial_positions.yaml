@@ -1,0 +1,12 @@
+# Posa iniziale personalizzata per il Task
+# NOTA: Qui i nomi DEVONO essere senza prefisso se il file viene caricato internamente da xacro, 
+# MA se usiamo il nostro launch file con prefix, xacro gestirà i nomi.
+# Per sicurezza usiamo i nomi base (a1, a2...), il prefisso lo aggiunge il launch file.
+initial_positions:
+  joint_a1: 0.625
+  joint_a2: 0.713
+  joint_a3: 0.240
+  joint_a4: -0.487
+  joint_a5: -0.112
+  joint_a6: 0.487
+  joint_a7: 0.00

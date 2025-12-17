@@ -1,0 +1,45 @@
+iiwa_2:
+  controller_manager:
+    ros__parameters:
+      update_rate: 100  # Hz
+
+      iiwa_2_arm_controller:
+        type: joint_trajectory_controller/JointTrajectoryController
+
+      joint_state_2_broadcaster:
+        type: joint_state_broadcaster/JointStateBroadcaster
+
+  iiwa_2_arm_controller:
+    ros__parameters:
+      joints:
+        - iiwa_2_joint_a1
+        - iiwa_2_joint_a2
+        - iiwa_2_joint_a3
+        - iiwa_2_joint_a4
+        - iiwa_2_joint_a5
+        - iiwa_2_joint_a6
+        - iiwa_2_joint_a7
+
+      command_interfaces:
+        - position
+      
+      state_interfaces:
+        - position
+        - velocity
+      
+      state_publish_rate: 100.0
+      action_monitor_rate: 20.0
+      allow_partial_joints_goal: false
+      open_loop_control: true
+      allow_integration_in_goal_trajectories: true
+
+  joint_state_2_broadcaster:
+    ros__parameters:
+      joints:
+        - iiwa_2_joint_a1
+        - iiwa_2_joint_a2
+        - iiwa_2_joint_a3
+        - iiwa_2_joint_a4
+        - iiwa_2_joint_a5
+        - iiwa_2_joint_a6
+        - iiwa_2_joint_a7

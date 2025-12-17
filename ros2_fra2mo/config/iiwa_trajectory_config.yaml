@@ -1,0 +1,28 @@
+iiwa:
+  publisher_joint_trajectory_controller:
+    ros__parameters:
+      controller_name: "iiwa_arm_controller"
+      wait_sec_between_publish: 6
+
+      goal_names: ["home", "high", "pick", "place"]
+      
+      home:
+        positions: [0.625, 0.713, 0.240, -0.487, -0.112, 0.487, 0.00]
+        
+      high:
+        positions: [-1.139, 0.713, 0.208, -0.509, -0.176, 0.487, 0.00]
+      
+      pick:
+        positions: [0.593, 1.664, 0.008, -0.079, 0.00, 0.849, 0.00]
+      
+      place:
+        positions: [-1.395, 1.600, -0.176, -1.211, 0.850, 0.215, -0.016]
+
+      joints:
+        - iiwa_joint_a1
+        - iiwa_joint_a2
+        - iiwa_joint_a3
+        - iiwa_joint_a4
+        - iiwa_joint_a5
+        - iiwa_joint_a6
+        - iiwa_joint_a7
