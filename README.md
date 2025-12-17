@@ -4,10 +4,9 @@ Final Project - Robotics Lab 2025/26
 - `ros2_iiwa` - ROS2 stack for KUKA iiwa 14 collaborative robots
 - `ros2_fra2mo` - containing files to simulate fra2mo (differential drive robot) and the cooperative task
 - `aruco_ros` - software package and ROS wrappers of the Aruco Augmented Reality marker detector library
-- `m-explore-ros2` - 
+- `m-explore-ros2` - for greedy frontier-based exploration
 
 ## Getting Started
-
 ```shell
 cd ~/ros2_ws
 git clone https://github.com/gianmarco-ferrara/Final-Project-RL2025.git
